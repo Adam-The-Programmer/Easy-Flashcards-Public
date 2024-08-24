@@ -11,7 +11,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object ApiModule {
 
-    private const val BASE_URL = "https://easyflashcards-413816.ew.r.appspot.com/api/"
+    private const val BASE_URL = "https://name.com/api/" // provide address returned by google cloud
 
     @Provides
     @Singleton
