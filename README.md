@@ -12,7 +12,7 @@ The application also supports collaborative learning by allowing you to share yo
 
 # :sparkles: Features List
 1. Creating, Modifying and Removing Packages & Flashcards - Relational DB
-2. Creating Cards containing one word to many translations, explanations phraases
+2. Creating Cards containing one word to many translations, explanations phrases
 3. Playing Explanation Game - just browsing cards
 4. Playing Learning Game - aplication gets 5 random cards and displays them in random order. You have to decide weather they know then or not. If You clicks know on 3 cards and dont know on 2, aplication removes these 2 known from the list and gets another 2 random generated to have always group of 5 cards - **this feature is designed to enhancce the proces of memorization**. You have to decide know or don't quickly because time is running out...
 5. Quiz Game - if you have package of 100 cards quiz will get random 15. In this mode you earn the more points the more time is left
