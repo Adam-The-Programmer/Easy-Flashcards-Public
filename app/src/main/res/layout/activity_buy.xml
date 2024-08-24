@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".starter_activities.MainActivity">
+
+    <include
+        android:id="@+id/buy_toolbar"
+        layout="@layout/buy_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/expandedInputStyleDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="4dp"
+                app:endIconMode="dropdown_menu"
+                app:startIconDrawable="@drawable/ic_language">
+
+                <AutoCompleteTextView
+                    android:id="@+id/native_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/native_language_field_hint"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColor="@color/pink_light" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/expandedInputStyleDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="4dp"
+                app:endIconMode="dropdown_menu"
+                app:startIconDrawable="@drawable/ic_language">
+
+                <AutoCompleteTextView
+                    android:id="@+id/foreign_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/foreign_language_field_hint"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColor="@color/pink_light" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/inputTextStyleDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="8dp"
+                app:endIconDrawable="@drawable/ic_clear"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_money">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/maximum_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ma_price_field_hint"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/pink_light" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/expandedInputStyleDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="16dp"
+                app:endIconMode="dropdown_menu"
+                app:startIconDrawable="@drawable/ic_currency">
+
+                <AutoCompleteTextView
+                    android:id="@+id/preferred_currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/currency_field_hint"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColor="@color/pink_light" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/apply_searching_settings"
+                style="@style/smallComponentsStyleDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="12dp"
+                android:text="@string/apply"
+                android:textColor="@color/purple_700" />
+
+        </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".starter_activities.MainActivity">
+
+            <fragment
+                android:id="@+id/filter_fragment"
+                android:name="pl.lbiio.easyflashcards.drawer_items.buying.ProductsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="1dp"
+                app:behavior_peekHeight="70dp"
+                app:behavior_skipCollapsed="true"
+                app:layout_behavior=".drawer_items.buying.GestureLockedBottomSheetBehavior"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <data>
+
+        </data>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".BuyActivity"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/buy_toolbar"
+                layout="@layout/buy_toolbar" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:itemCount="5"
+                tools:listitem="@layout/recycle_list_product_item" />
+
+        </LinearLayout>
+    </layout>
+    -->

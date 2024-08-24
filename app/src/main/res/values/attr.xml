@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorNavigationItem" format="color" />
+    <attr name="colorNavigationItemSelected" format="color" />
+    <attr name="drawableNavigationItemBackground" format="reference" />
+    <attr name="drawableNavigationBackground" format="reference"/>
+    <attr name="drawableDividerBackground" format="reference"/>
+    <attr name="shapeAppearanceSmallComponent" format="reference"/>
+    <attr name="shapeAppearanceSmallComponentDark" format="reference"/>
+</resources>

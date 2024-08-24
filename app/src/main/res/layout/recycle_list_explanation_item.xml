@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="explanation_data"
+            type="pl.lbiio.easyflashcards.data.ExplanationItem" />
+    </data>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputTextStyle"
+        android:id="@+id/explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/explanation_label"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="120"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_clear"
+        app:startIconDrawable="@drawable/ic_edit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{explanation_data.explanation}"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+</layout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="leader_board_item"
+            type="pl.lbiio.easyflashcards.data.LeaderBoardItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="4dp"
+        setColor="@{leader_board_item.color}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/leader_board_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_marginStart="8dp"
+                setIndex="@{String.format(`%s`, leader_board_item.index)}"/>
+
+            <TextView
+                android:id="@+id/leader_board_nick"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:textSize="16sp"
+                android:padding="8dp"
+                setNick="@{leader_board_item.nick}" />
+
+            <TextView
+                android:id="@+id/leader_board_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:textColor="#16CF1E"
+                setLeaderBoardItemPoints="@{String.format(`%s`, leader_board_item.points)}" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/trophy" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

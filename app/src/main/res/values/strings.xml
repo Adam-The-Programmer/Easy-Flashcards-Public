@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">Easy Flashcards</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="packages_title">Main Packages</string>
+    <string name="buy_title">Buy</string>
+    <string name="settings_title">Settings</string>
+    <string name="about_title">About</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="account_title">Account</string>
+    <string name="welcome">Easy Flash Cards</string>
+    <string name="nav_category_one">app</string>
+    <string name="nav_category_two">Other</string>
+    <string name="add_package_description">add package</string>
+    <string name="add_flash_card_description">add flashCard</string>
+    <string name="package_name_field_hint">package name</string>
+    <string name="native_language_field_hint">native</string>
+    <string name="foreign_language_field_hint">foreign</string>
+    <string name="add_image">add image</string>
+    <string name="apply">apply</string>
+    <string name="dismiss">dismiss</string>
+    <string name="external_storage_permission_info">This permission is needed in order to access gallery and pick the photo</string>
+    <string name="fill_form_notification">Fill all pools and choose an image!</string>
+    <string name="word_field_hint">Word</string>
+    <string name="phrase_label">Phrase</string>
+    <string name="explanation_label">Explanation</string>
+    <string name="translation_label">Translation</string>
+    <string name="explore_cards">Explore Cards</string>
+    <string name="learn_cards">Learn Cards</string>
+    <string name="choose_game">Choose Game</string>
+    <string name="translation_opt">Word - Translations</string>
+    <string name="explanation_opt">Word - Explanations</string>
+    <string name="phrase_opt">Word - Phrases</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="edit_package">edit</string>
+    <string name="remove_package">remove</string>
+    <string name="share_package">share</string>
+    <string name="new_best_translation_score">New best translations score! %1$s</string>
+    <string name="best_translations_score">Best translations score is %1$s</string>
+    <string name="your_translations_score">Your translations score is %1$s</string>
+    <string name="new_best_explanations_score">New best explanations score! %1$s</string>
+    <string name="best_explanations_score">Best explanations score is %1$s</string>
+    <string name="your_explanations_score">Your explanations score is %1$s</string>
+    <string name="new_best_phrases_score">New best phrases score! %1$s</string>
+    <string name="best_phrases_score">Best phrases score is %1$s</string>
+    <string name="your_phrases_score">Your phrases score is %1$s</string>
+    <string name="step_counter">%1$s/15</string>
+    <string name="explore_progress">%1$s/%2$s</string>
+    <string name="set_price_shared_package">Set Price for %1$s (Coming soon!)</string>
+    <string name="set_description_shared_package">Set Description for %1$s</string>
+    <string name="amount_of_packages">YOUR PACKAGES %1$s ITEMS</string>
+    <string name="amount_of_cards">YOUR CARDS %1$s ITEMS</string>
+    <string name="new_best_memory_score">New best memory score! %1$s</string>
+    <string name="best_memory_score">Best memory score is %1$s</string>
+    <string name="your_memory_score">Your memory score is %1$s</string>
+    <string name="amount_of_cards_to_buy">cards %1$s</string>
+    <string name="full_price_to_pay">%1$s %2$s</string>
+    <string name="download_for_price">DOWNLOAD FOR %1$s %2$s</string>
+    <string name="num_of_years">%1$s years</string>
+    <string name="num_of_days">%1$s days</string>
+    <string name="num_of_hours">%1$s hours</string>
+    <string name="num_of_minutes">%1$s minutes</string>
+    <string name="less_than_minute">Less than minute</string>
+
+
+    <array name="languages">
+        <item>Polish</item>
+        <item>English</item>
+        <item>French</item>
+        <item>Spanish</item>
+        <item>German</item>
+        <item>Italian</item>
+        <item>Russian</item>
+        <item>Japanese</item>
+    </array>
+
+    <array name="languages_tags">
+        <item>PL</item>
+        <item>UK</item>
+        <item>FR</item>
+        <item>ES</item>
+        <item>DE</item>
+        <item>IT</item>
+        <item>RU</item>
+        <item>JA</item>
+    </array>
+
+    <array name="countries">
+        <item>Poland</item>
+        <item>England</item>
+        <item>France</item>
+        <item>Spain</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Russia</item>
+        <item>Japan</item>
+    </array>
+
+    <array name="currencies">
+        <item>PLN</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>RUB</item>
+        <item>JPY</item>
+    </array>
+    <string name="log_in_form">Log in</string>
+    <string name="registration_form">Register</string>
+    <string name="login_label">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="password_retype_hint">Password retyped</string>
+    <string name="log_in">Login</string>
+    <string name="registration_label">Registration</string>
+    <string name="register">Register</string>
+    <string name="terms_checkbox">Accept Terms</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="title_activity_share_package">SharePackageActivity</string>
+    <string name="publish">publish</string>
+    <string name="dont_know">don\'t know</string>
+    <string name="know">know</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play_again">play again</string>
+    <string name="back_to_menu">back</string>
+    <string name="congratulations">Congratulations !</string>
+    <string name="rate_package">rate</string>
+    <string name="shared_packages_title">Shared Packages</string>
+    <string name="country_hint">country</string>
+    <string name="phone_hint">phone</string>
+    <string name="update_sharing_package">update sharing</string>
+    <string name="start_quiz">start quiz</string>
+    <string name="start_memory">start memory</string>
+    <string name="leaderborad_title">Leader Board</string>
+    <string name="awards_title">Last Awards</string>
+    <string name="ma_price_field_hint">max price</string>
+    <string name="currency_field_hint">currency</string>
+    <string name="download">download</string>
+    <string name="word">word</string>
+    <string name="default_currency">EUR</string>
+    <string name="no_internet_connection_dialog_title">Internet connection is lost</string>
+    <string name="no_internet_connection_dialog_content">Click OK to reload</string>
+    <string name="no_internet_connection_dialog_tag">internet loss dialog</string>
+    <string name="permission_tag">PERMISSION STATUS</string>
+    <string name="password_length_requirement">password  has to have minimum 6 characters</string>
+    <string name="password_and_terms_criteria">passwords have to be the same and terms must be accepted</string>
+    <string name="fill_all_fields">fill all fields</string>
+    <string name="at_least_one_translation">you have to add at least one translation to one word</string>
+    <string name="removing_package_dialog_title">Removing package</string>
+    <string name="removing_package_dialog_content">Are You sure to remove this package</string>
+    <string name="removing_package_dialog_tag">removing package</string>
+    <string name="rating_package_dialog_title">Rating package</string>
+    <string name="rating_package_dialog_content">Rate it!</string>
+    <string name="rating_package_dialog_warn">Rate must be grater than 0</string>
+    <string name="rating_package_dialog_tag">rating package</string>
+    <string name="play_cards_requirement_info">add a few flashcards first!</string>
+    <string name="removing_card_dialog_title">Removing card</string>
+    <string name="removing_card_dialog_content">Are You sure to remove this card?</string>
+    <string name="removing_card_dialog_tag">removing card</string>
+    <string name="service_working_label">Easy Flashcards working</string>
+    <string name="service_name">BackupForegroundService</string>
+    <string name="service_action_name">HandlingBackup</string>
+    <string name="free">FREE</string>
+    <string name="unsupported_language">Language nt supported</string>
+    <string name="too_few_items_to_start_game">Too few items to start a game</string>
+    <string name="own">OWN</string>
+    <string name="shared">SHARED</string>
+    <string name="bought">BOUGHT</string>
+    <string name="download_for_free">DOWNLOAD FOR FREE</string>
+</resources>

@@ -1,0 +1,30 @@
+package pl.lbiio.easyflashcards.api_classes
+
+data class PackageFromBackup(
+    val packageID: String,
+    val name: String,
+    val frontLanguage: String,
+    val backLanguage: String,
+    val artwork: String,
+    val size: Int,
+    val status: Int,
+    val maxKnowledgeLevel: Int,
+    val acquiredKnowledgeLevel: Int,
+    val price: Int,
+    val currency: String,
+    val description: String,
+    val personalRate: Int,
+    val learningTranslationsBestScore: Int,
+    val learningExplanationsBestScore: Int,
+    val learningPhrasesBestScore: Int,
+    val learningTranslationsCurrentScore: Int,
+    val learningExplanationsCurrentScore: Int,
+    val learningPhrasesCurrentScore: Int,
+    val areTranslationsCompleted: Boolean,
+    val areExplanationsCompleted: Boolean,
+    val arePhrasesCompleted: Boolean,
+    val quizBestTranslationsScore: Int,
+    val quizBestExplanationsScore: Int,
+    val quizBestPhrasesScore: Int,
+    val memoryBestScore: Int
+)
