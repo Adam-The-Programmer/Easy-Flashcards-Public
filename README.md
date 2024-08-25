@@ -7,7 +7,6 @@ The application also supports collaborative learning by allowing you to share yo
 
 > [!TIP]
 > Watch the film below
-[![YouTube](http://i.ytimg.com/vi/61pNrGnnFuc/hqdefault.jpg)](https://www.youtube.com/watch?v=61pNrGnnFuc)
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/61pNrGnnFuc/0.jpg)](https://www.youtube.com/watch?v=61pNrGnnFuc)
 
